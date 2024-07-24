@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body{
+        background-color:rgba(199, 141, 175, 0.7) ;
+    }
+.contentBox{
+    width: 800px;
+    height: 380px;
+    border: 1px solid black;
+    margin: 50px auto;
+    background-color: rgba(255, 200, 255, 0.7);
+    box-shadow: -2px 4px 26px 6px rgba(255,200,255,0.93) ;
+    -webkit-box-shadow: -2px 4px 26px 6px rgba(255,200,255,0.93) ;
+    -moz-box-shadow: -2px 4px 26px 6px rgba(255,200,255,0.93) ;
+    }
+.contentBox h2{
+    text-align: center;
+    background-color: rgba(245, 250, 200, 0.8);
+    }
+    .contentBox p{
+        margin-left: 20px;
+        margin-top: 30px;
+        font-size: 24px;
+    }
+button{
+    background-color: rgba(188, 212, 197, 0.1);
+    width: 45%;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 27px;
+    margin-top: 26px;
+    
+}
+#result{
+    font-size: 24px;
+    margin-top: 30px;
+}
+label{
+    font-size: 24px;
+    margin-left: 20px;
+}
+input{
+    width: 50%;
+}
+.container{
+    width: 800px;
+    height: 360px;
+    border: 1px solid black;
+    margin: 50px auto;
+    background-color: rgba(255, 200, 255, 0.7);
+    box-shadow: -2px 4px 26px 6px rgba(255,200,255,0.93) ;
+    -webkit-box-shadow: -2px 4px 26px 6px rgba(255,200,255,0.93) ;
+    -moz-box-shadow: -2px 4px 26px 6px rgba(255,200,255,0.93) ;
+}
+.container h2{
+    text-align: center;
+    background-color: rgba(245, 250, 200, 0.8);
+}
+.container label{
+    margin-top: 15px;
+    margin-left: 20px;
+    display: block;
+}
+.container input{
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.container p{
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 24px;
+}
+.containerBox{
+    width: 800px;
+    height: 360px;
+    border: 1px solid black;
+    margin: 50px auto;
+    background-color: rgba(255, 200, 255, 0.7);
+    box-shadow: -2px 4px 26px 6px rgba(255,200,255,0.93) ;
+    -webkit-box-shadow: -2px 4px 26px 6px rgba(255,200,255,0.93) ;
+    -moz-box-shadow: -2px 4px 26px 6px rgba(255,200,255,0.93) ;
+}
+.containerBox h2{
+    text-align: center;
+    background-color: rgba(245, 250, 200, 0.8);
+   
+}
+.containerBox p{margin-top: 30px;
+    margin-left: 20px;
+    font-size: 24px;
+}
+@media  screen and (max-width:768px){
+
+    .contentBox{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .contentBox h2{
+        width: 800px;
+    }
+    button{
+        margin-left: 0;
+    }
+    .contentBox input{
+        width: 45%;
+        height: 40px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container button{
+        margin-left: 10px;
+        width: 45%;
+    }
+    .container h2{
+        width: 800px;
+    }
+    .container input{
+        width: 45%;
+        height: 40px;
+    }
+
+    .containerBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .containerBox input{
+        width: 45%;
+        height: 40px;
+        margin-top: 15px;
+    }
+    .containerBox h2{
+        width: 800px;
+    }
+    .containerBox label{
+        margin-top: 20px;
+    }
+}

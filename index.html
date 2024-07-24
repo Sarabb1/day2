@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="contentBox">
+    <h2>LEARN JAVASCRIPT</h2>
+        <label for="num">Enter a:</label>
+        <input type="number"  name="first" id="num"><br>
+        <label for="num2">Enter b:</label>
+        <input type="number" name="sceond" id="num2"> 
+       <br>
+        <button onclick="var a = document.getElementById('num').value;var b = document.getElementById('num2').value; document.getElementById('result').innerHTML = 'Result:  a+b =  ' + sum(parseInt(a),parseInt(b))">Sum</button>
+        <button onclick="var a = document.getElementById('num').value; var b = document.getElementById('num2').value; document.getElementById('result').innerHTML = 'Result: a-b =  ' + sub(parseInt(a),parseInt(b))">Subtract</button>
+        <button onclick="var a = document.getElementById('num').value; var b = document.getElementById('num2').value; document.getElementById('result').innerHTML = 'Result: a*b =  ' + multiply(parseInt(a),parseInt(b))">Multiply</button>
+        <button onclick="var a = document.getElementById('num').value; var b = document.getElementById('num2').value; document.getElementById('result').innerHTML = 'Result: a/b =  ' + div(parseInt(a),parseInt(b))">divide</button>
+        <button onclick="var a = document.getElementById('num').value; var b = document.getElementById('num2').value; document.getElementById('result').innerHTML = 'Result: a%b =  ' + mod(parseInt(a),parseInt(b))">Modulus</button>
+        <button onclick="var a = document.getElementById('num').value; var b = document.getElementById('num2').value; document.getElementById('result').innerHTML = 'Result: a**b = ' + exp(parseInt(a),parseInt(b))">Exponentiation</button>
+        <p id="result"Result</p>
+    </div>
+
+    <div class="container">
+        <h2>Conditional Statements</h2>
+
+        <label for="num3">Enter a number: </label>
+            <input type="number" name="num" id="num3">
+ 
+            <button onclick="let ele = parseInt(document.getElementById('num3').value);  
+            if (ele> 0) {
+                document.getElementById('conditionalResult').innerHTML = 'Result: ' + ' Positive integer';
+            } else if (ele < 0 ){
+                document.getElementById('conditionalResult').innerHTML = 'Result: ' + ' Negative integer';
+            } else {
+                document.getElementById('conditionalResult').innerHTML = 'Result: ' + 'Zero';
+            }
+            ">Result</button>
+ 
+            <p id="conditionalResult">Result: </p>
+    </div>
+    <div class="containerBox">
+        <h2>Loops</h2>
+        <label for="first">Enter starting number: </label>
+        <input type="number" name="first" id="first"> <br>
+        <label for="last">Enter ending number:</label>
+        <input type="number" name="last" id="last" >
+
+        <button onclick = "
+            let startNum = parseInt(document.getElementById('first').value);
+            let endNum = parseInt(document.getElementById('last').value);
+            if(startNum < endNum) {
+                let newEle = '';
+                for(let i = startNum; i <= endNum; i++) {
+                    newEle += i + ' ';
+                    document.getElementById('loopsResult').innerHTML = 'Result : ' + newEle;
+                    console.log(i);
+                }
+            } else {
+                let newEle = '';
+                let i = startNum;
+                while(i >= endNum) {
+                    newEle += i + ' ';
+                    document.getElementById('loopsResult').innerHTML = 'Result : ' + newEle;
+                    console.log(i);
+                    i--;
+                }
+            }
+
+
+        ">Show</button>
+
+        <p id="loopsResult">Result: </p>
+    </div>
+
+
+    <script>
+        
+
+        console.log(a , b);
+       function sum(a,b) {
+            return a+b;
+       }
+       function sub(a,b){
+        return a-b;
+       }
+       function multiply(a,b){
+        return a*b;
+       }
+       function div(a,b){
+        return a/b;
+       }
+       function mod(a,b){
+        return a%b;
+       }
+       function exp(a,b){
+        return a**b;
+       }
+
+
+    </script>
+</body>
+
+</html>
